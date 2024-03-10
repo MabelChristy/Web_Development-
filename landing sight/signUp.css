@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #c4c3ca;
+    overflow-x: hidden;
+    background-image: url(bg.webp);
+  }
+
+  header{
+    color: #D4AC0D;
+    font-size: larger;
+  }
+  
+  .link {
+    color: #D4AC0D;
+    cursor: pointer;
+    font-size:20px;
+  }
+  
+  .link:hover {
+    color: #102770;
+  }
+  
+  .card-3d-wrap {
+    margin-top: 60px;
+    width: 50%;
+  }
+  
+  .form-style {
+    padding: 13px 20px;
+    padding-left: 55px;
+    height: 48px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: white;
+    border: none;
+    transition: box-shadow 0.5s;
+  }
+  
+  .form-style:focus,
+  .form-style:active {
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 48px;
+    font-size: 24px;
+    line-height: 48px;
+    text-align: left;
+    color: #ffeba7;
+    transition: color 0.5s;
+  }
+  
+  .btn {
+    border-radius: 4px;
+    height: 44px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 24px 0 rgba(255, 235, 167, .2);
+    background-color: #ffeba7;
+    color: #102770;
+    transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+  }
+  
+  .btn:active,
+  .btn:focus {
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+  }
+  
+  .btn:hover {
+    background-color: #102770;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .signup-section {
+    display: none;
+  }
+  
+  h4{
+    color: #D4AC0D;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }

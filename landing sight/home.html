@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theFLORISTICS</title>
+    <link rel="icon" href="2.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="homepage">
+            <div class="blacksheed">
+                <span class="name"><h1>theFLORISTICS</h1><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Welcome totheFLORISTICS
+                        shop here you get every
+                        florals handcrafted by flowchemists...!!! ,..</span>
+            </div>
+            <input type="checkbox" id="so">
+            <ul>
+                <li class="li" onclick="toggleSection('login')"><a href="index.html">Floraler's - Login</a></li>
+                <li class="li" onclick="toggleSection('signup')"><a href="sign-up.html">B' a Floraler - Sign Up</a></li>
+                <li class="li" onclick="toggleSection('contact')"><a href="contact.html">Contact Us</a></li>
+                <label for="so" class="lable">
+                    <span class="sp"></span>
+                </label>
+            </ul>
+            <div class="fram">
+                <div class="box">
+                    <div class="child"><img src="wed-decor.avif"></div>
+                    <div class="child"><img src="party-decor.avif"></div>
+                    <div class="child"><img src="shoot decor.avif"></div>
+                    <div class="child"><img src="bouquet.avif"></div>
+                    <div class="child"><img src="flw-wreth.avif"></div>
+                    <div class="child"><img src="dry-flw.avif"></div>
+                </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleSection(section) {
+            // Hide all sections
+            document.querySelectorAll('.homepage > *:not(.blacksheed)').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.querySelector(`.${section}-section`).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>
